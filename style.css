@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body {
+    color: wheat;
+    background-color: #0f1a25;
+    text-align: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.periodic_table {
+    height: fit-content;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(18, minmax(0, 1fr));
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.periodic_table div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #26394f;
+}
+
+.periodic_table div:nth-child(2) {
+    grid-row: 2;
+    grid-column: 10;
+}
