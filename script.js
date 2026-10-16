@@ -529,6 +529,192 @@ const elements = [
         group: 16,
         period: 9,
     },
+
+    // period 7
+    {
+        no: 87,
+        sym: "Fr",
+        group: 1,
+        period: 7,
+    },
+    {
+        no: 88,
+        sym: "Ra",
+        group: 2,
+        period: 7,
+    },{
+        
+        sym: "Ac - Lr",
+        group: 3,
+        period: 7,
+    },{
+        no: 104,
+        sym: "Rf",
+        group: 4,
+        period: 7,
+    },{
+        no: 105,
+        sym: "Db",
+        group: 5,
+        period: 7,
+    },{
+        no: 106,
+        sym: "Sg",
+        group: 6,
+        period: 7,
+    },{
+        no: 107,
+        sym: "Bh",
+        group: 7,
+        period: 7,
+    },{
+        no: 108,
+        sym: "Hs",
+        group: 8,
+        period: 7,
+    },{
+        no: 109,
+        sym: "Mt",
+        group: 9,
+        period: 7,
+    },{
+        no: 110,
+        sym: "Ds",
+        group: 10,
+        period: 7,
+    },{
+        no: 111,
+        sym: "Rg",
+        group: 11,
+        period: 7,
+    },{
+        no: 112,
+        sym: "Cn",
+        group: 12,
+        period: 7,
+    },{
+        no: 113,
+        sym: "Nh",
+        group: 13,
+        period: 7,
+    },{
+        no: 114,
+        sym: "FI",
+        group: 14,
+        period: 7,
+    },{
+        no: 115,
+        sym: "Mc",
+        group: 15,
+        period: 7,
+    },{
+        no: 116,
+        sym: "Lv",
+        group: 16,
+        period: 7,
+    },{
+        no: 117,
+        sym: "Ts",
+        group: 17,
+        period: 7,
+    },{
+        no: 118,
+        sym: "Og",
+        group: 18,
+        period: 7,
+    },
+
+    // spl case of period 7
+    {
+        no: 89,
+        sym: "Ac",
+        group: 3,
+        period: 10,
+    },
+    {
+        no: 90,
+        sym: "Th",
+        group: 4,
+        period: 10,
+    },
+    {
+        no: 91,
+        sym: "Pa",
+        group: 5,
+        period: 10,
+    },
+    {
+        no: 92,
+        sym: "U",
+        group: 6,
+        period: 10,
+    },
+    {
+        no: 93,
+        sym: "Np",
+        group: 7,
+        period: 10,
+    },
+    {
+        no: 94,
+        sym: "Pu",
+        group: 8,
+        period: 10,
+    },
+    {
+        no: 95,
+        sym: "Am",
+        group: 9,
+        period: 10,
+    },
+    {
+        no: 96,
+        sym: "Cm",
+        group: 10,
+        period: 10,
+    },
+    {
+        no: 97,
+        sym: "Bk",
+        group: 11,
+        period: 10,
+    },
+    {
+        no: 98,
+        sym: "Cf",
+        group:12,
+        period: 10,
+    },
+    {
+        no: 99,
+        sym: "Es",
+        group: 13,
+        period: 10,
+    },
+    {
+        no: 100,
+        sym: "Fm",
+        group: 14,
+        period: 10,
+    },
+    {
+        no: 101,
+        sym: "Md",
+        group:15,
+        period: 10,
+    },
+    {
+        no: 102,
+        sym: "No",
+        group:16,
+        period: 10,
+    },
+    {
+        no: 103,
+        sym: "Lr",
+        group:17,
+        period: 10,
+    },
 ]
 
 elements.forEach(element => {
