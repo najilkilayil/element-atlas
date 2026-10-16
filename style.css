@@ -5,11 +5,12 @@
 }
 
 body {
-    color: wheat;
+    color: white;
     background-color: #0f1a25;
     text-align: center;
     height: 100vh;
     user-select: none;
+    font-family:sans-serif;
 }
 
 .periodic_table {
@@ -22,7 +23,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    width: fit-content;
+    width: 90%;
+    font-weight: 700;
 }
 
 .periodic_table div {
@@ -34,6 +36,12 @@ body {
     align-items: center;
     border-radius: 25px;
     border: 1px solid #26394f;
+    transition: 0.2s;
+}
+
+.periodic_table div:hover {
+    transform: translateY(-5px) scale(1.1);
+    border: 1px solid #747a81;
 }
 
 .periodic_table div:nth-child(2) {
