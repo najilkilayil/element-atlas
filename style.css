@@ -101,7 +101,7 @@ h1 {
 }
 
 #show_box_anim {
-    animation: show_box 1.2s forwards;
+    animation: show_box 0.5s forwards;
 }
 
 @keyframes show_box {
