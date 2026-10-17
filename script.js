@@ -734,4 +734,6 @@ elements.forEach(element => {
 
     let periodicTable = document.querySelector(".periodic_table")
     periodicTable.appendChild(card)
+
 })
+

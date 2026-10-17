@@ -10,7 +10,7 @@ body {
     text-align: center;
     height: 100vh;
     user-select: none;
-    font-family:sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: none;
 }
 
@@ -39,6 +39,7 @@ body {
     border: 1px solid #26394f;
     transition: 0.2s;
     background-color: #111C2B;
+    cursor: pointer;
 }
 
 .periodic_table div:hover {
@@ -60,4 +61,36 @@ h1 {
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
+}
+
+.details {
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    border: 1px solid #172136;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+}
+
+.element_sym {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    font-weight: 700;
+    border: 1px solid #aec4fe;
+    border-radius: 16px;
+}
+
+.element_info {
+    margin: 10px;
+    text-align: start;
+    letter-spacing: 3px;
 }
