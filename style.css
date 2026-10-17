@@ -65,22 +65,26 @@ h1 {
 
 .details {
     position: absolute;
-    width: 40%;
-    height: 100px;
+    width: 40px;
+    /* width: 40%; */
+    height: 60px;
+    /* height: 100px; */
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 16px;
     border: 1px solid #172136;
     backdrop-filter: blur(5px);
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: row;
 }
 
 .element_sym {
     margin: 10px;
     padding: 20px;
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: 52px;
@@ -93,4 +97,49 @@ h1 {
     margin: 10px;
     text-align: start;
     letter-spacing: 3px;
+    display: none;
+}
+
+#show_box_anim {
+    animation: show_box 1.2s forwards;
+}
+
+@keyframes show_box {
+    from {
+        top: -400px;
+        opacity: 0;
+    }
+    to {
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+#box_full_size_anim {
+    animation: box_full_size 1.2s forwards;
+}
+
+@keyframes box_full_size {
+    to {
+        width: 40%;
+        height: 100px;
+    }
+}
+
+#box_fade_out_anim {
+    animation: box_fade_out 1s forwards;
+}
+
+@keyframes box_fade_out {
+    from {
+        width: 40%;
+        top: 10px;
+        opacity: 1;
+    }
+
+    to {
+        width: 40%;
+        top: -200px;
+        opacity: 0;
+    }
 }

@@ -71,43 +71,43 @@ const elements = [
         group: 1,
         period: 3,
     },
-        {
+    {
         no: 12,
         sym: "Mg",
         group: 2,
         period: 3,
     },
-        {
+    {
         no: 13,
         sym: "Al",
         group: 13,
         period: 3,
     },
-        {
+    {
         no: 14,
         sym: "Si",
         group: 14,
         period: 3,
     },
-        {
+    {
         no: 15,
         sym: "P",
         group: 15,
         period: 3,
     },
-        {
+    {
         no: 16,
         sym: "S",
         group: 16,
         period: 3,
     },
-        {
+    {
         no: 17,
         sym: "Cl",
         group: 17,
         period: 3,
     },
-        {
+    {
         no: 18,
         sym: "Ar",
         group: 18,
@@ -443,7 +443,7 @@ const elements = [
         group: 18,
         period: 6,
     },
-    
+
     // spl case in period 6
     {
         no: 57,
@@ -548,82 +548,82 @@ const elements = [
         sym: "Ra",
         group: 2,
         period: 7,
-    },{
-        
+    }, {
+
         sym: "Ac - Lr",
         group: 3,
         period: 7,
-    },{
+    }, {
         no: 104,
         sym: "Rf",
         group: 4,
         period: 7,
-    },{
+    }, {
         no: 105,
         sym: "Db",
         group: 5,
         period: 7,
-    },{
+    }, {
         no: 106,
         sym: "Sg",
         group: 6,
         period: 7,
-    },{
+    }, {
         no: 107,
         sym: "Bh",
         group: 7,
         period: 7,
-    },{
+    }, {
         no: 108,
         sym: "Hs",
         group: 8,
         period: 7,
-    },{
+    }, {
         no: 109,
         sym: "Mt",
         group: 9,
         period: 7,
-    },{
+    }, {
         no: 110,
         sym: "Ds",
         group: 10,
         period: 7,
-    },{
+    }, {
         no: 111,
         sym: "Rg",
         group: 11,
         period: 7,
-    },{
+    }, {
         no: 112,
         sym: "Cn",
         group: 12,
         period: 7,
-    },{
+    }, {
         no: 113,
         sym: "Nh",
         group: 13,
         period: 7,
-    },{
+    }, {
         no: 114,
         sym: "Fl",
         group: 14,
         period: 7,
-    },{
+    }, {
         no: 115,
         sym: "Mc",
         group: 15,
         period: 7,
-    },{
+    }, {
         no: 116,
         sym: "Lv",
         group: 16,
         period: 7,
-    },{
+    }, {
         no: 117,
         sym: "Ts",
         group: 17,
         period: 7,
-    },{
+    }, {
         no: 118,
         sym: "Og",
         group: 18,
@@ -688,7 +688,7 @@ const elements = [
     {
         no: 98,
         sym: "Cf",
-        group:12,
+        group: 12,
         period: 10,
     },
     {
@@ -706,19 +706,19 @@ const elements = [
     {
         no: 101,
         sym: "Md",
-        group:15,
+        group: 15,
         period: 10,
     },
     {
         no: 102,
         sym: "No",
-        group:16,
+        group: 16,
         period: 10,
     },
     {
         no: 103,
         sym: "Lr",
-        group:17,
+        group: 17,
         period: 10,
     },
 ]
@@ -734,6 +734,49 @@ elements.forEach(element => {
 
     let periodicTable = document.querySelector(".periodic_table")
     periodicTable.appendChild(card)
-
+    card.addEventListener("click", function () {
+        showDetails()
+    })
 })
 
+let detailsBox = document.getElementById("details")
+let elementSymBox = document.getElementById("element_sym")
+let elementInfoBox = document.getElementById("element_info")
+
+function showDetails() {
+    detailsBox.style.display = "flex"
+    detailsBox.id = "details"
+    detailsBox.style.opacity = "1"
+
+    elementSymBox.style.display = "none"
+    elementInfoBox.style.display = "none"
+
+    detailsBox.id = "show_box_anim"
+
+    setTimeout(() => {
+        detailsBox.id = "box_full_size_anim"
+        // detailsBox.style.width = "40%"
+        // detailsBox.style.height = "100px"
+        setTimeout(() => {
+            elementSymBox.style.display = "flex"
+            elementInfoBox.style.display = "block"
+
+            setTimeout(() => {
+                detailsBox.id = "box_fade_out_anim"
+
+                detailsBox.addEventListener("animationend", function hideBox(event) {
+                    if (event.animationName === "box_fade_out") {
+                        detailsBox.style.display = "none"
+                        detailsBox.id = "details"
+
+                        elementInfoBox.style.display = "none"
+                        elementSymBox.style.display = "none"
+
+                        detailsBox.style.opacity = "1"
+                        detailsBox.removeEventListener("animationend", hideBox)
+                    }
+                })
+            }, 1000);
+        }, 900);
+    }, 1500);
+}
