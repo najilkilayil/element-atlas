@@ -100,6 +100,10 @@ h1 {
     display: none;
 }
 
+.period_group {
+    display: flex;
+}
+
 #show_box_anim {
     animation: show_box 0.5s forwards;
 }

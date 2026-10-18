@@ -18,7 +18,7 @@ elements.forEach(element => {
             highlight("10")
         }
         else {
-            showDetails(element.sym, element.no, element.name)
+            showDetails(element.sym, element.no, element.name, element.group, element.period)
         }
     })
 })
@@ -27,7 +27,7 @@ let detailsBox = document.getElementById("details")
 let elementSymBox = document.getElementById("element_sym")
 let elementInfoBox = document.getElementById("element_info")
 
-function showDetails(sym, no, name) {
+function showDetails(sym, no, name, group, period) {
     detailsBox.style.display = "flex"
     detailsBox.id = "details"
     detailsBox.style.opacity = "1"
@@ -45,6 +45,10 @@ function showDetails(sym, no, name) {
             elementInfoBox.innerHTML = `
                 <p>${no}</p>
                 <p>${name}</p>
+                <div class="period_group" id="period_group">
+                    <p>Group: ${group} &emsp;</p>
+                    <p>&emsp;Period: ${period}</p>
+                </div>
             `
             elementSymBox.innerHTML = sym
 
@@ -139,7 +143,7 @@ searchBar.addEventListener("keydown", function (event) {
 
         if (searchPass) {
             console.log(`${searchPass.name} - ${searchPass.sym} - ${searchPass.no}`)
-            showDetails(searchPass.sym, searchPass.no, searchPass.name)
+            showDetails(searchPass.sym, searchPass.no, searchPass.name, searchPass.group, searchPass.period)
         }
         else {
             console.log("Invalid Input")
