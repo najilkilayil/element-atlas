@@ -14,11 +14,11 @@ elements.forEach(element => {
         if (element.group === 3 && element.period === 6) {
             highlight("9")
         }
-        else if (element.group === 3 && element.period === 7){
+        else if (element.group === 3 && element.period === 7) {
             highlight("10")
         }
         else {
-        showDetails(element.sym , element.no, element.name)
+            showDetails(element.sym, element.no, element.name)
         }
     })
 })
@@ -98,3 +98,23 @@ function highlight(Row) {
         })
     }, delayAdd);
 }
+
+let searchMain = document.getElementById("search")
+let clickOrNot = false
+
+searchMain.addEventListener("mouseover", function () {
+    searchMain.style.width = "30%"
+})
+
+searchMain.addEventListener("mouseleave", function () {
+    if (!clickOrNot) {
+        searchMain.style.width = "50px"
+    }
+})
+
+searchMain.addEventListener("click", function () {
+    clickOrNot = true
+    searchMain.style.width = "30%"
+})
+
+searchMain.addEventListener("")

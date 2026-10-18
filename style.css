@@ -156,3 +156,47 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+.search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    /* width: 30%; */
+    border-radius: 50px;
+    border: 1px solid #c1c2c4a1;
+    background: #22232591;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search_icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* .search:hover {
+    width: 30%;
+    border-radius: 25px;
+} */
+
+.search_bar_div {
+    width: 100%;
+    height: 90%;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.search_bar_div input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
