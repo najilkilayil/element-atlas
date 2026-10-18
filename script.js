@@ -147,7 +147,7 @@ searchBar.addEventListener("keydown", function (event) {
         }
         else {
             console.log("Invalid Input")
-            showDetails("Error", "Invalid Input", "Search not found")
+            showDetails("Error", "Invalid Input", "Search not found" , "" , "")
         }
 
         searchBar.value = ""
