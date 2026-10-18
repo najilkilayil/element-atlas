@@ -74,11 +74,12 @@ function showDetails(sym, no, name) {
 function highlight(Row) {
     let delayAdd = 0
     let delayRemove = 0
+    let cards = document.querySelectorAll(".card_element")
 
-    document.querySelectorAll(".card_element").forEach(card => {
+    cards.forEach(card => {
         if (card.style.gridRow === Row) {
             setTimeout(() => {
-                card.style.border = "1px solid cyan" 
+                card.id = "highlight"
             }, delayAdd);
 
             delayAdd = delayAdd + 100
@@ -86,10 +87,10 @@ function highlight(Row) {
     })
 
     setTimeout(() => {
-        document.querySelectorAll(".card_element").forEach(card => {
+        cards.forEach(card => {
             if (card.style.gridRow === Row) {
                 setTimeout(() => {
-                    card.style.border = "1px solid #26394f"
+                    card.id = ""
                 }, delayRemove);
 
                 delayRemove = delayRemove + 100
