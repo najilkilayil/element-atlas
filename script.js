@@ -100,21 +100,34 @@ function highlight(Row) {
 }
 
 let searchMain = document.getElementById("search")
-let clickOrNot = false
+let searchBar = document.getElementById("search_bar")
+let clickedOrNot = false
 
 searchMain.addEventListener("mouseover", function () {
     searchMain.style.width = "30%"
 })
 
 searchMain.addEventListener("mouseleave", function () {
-    if (!clickOrNot) {
+    if (!clickedOrNot) {
         searchMain.style.width = "50px"
     }
 })
 
 searchMain.addEventListener("click", function () {
-    clickOrNot = true
+    clickedOrNot = true
     searchMain.style.width = "30%"
+    searchBar.focus()
 })
 
-searchMain.addEventListener("")
+document.addEventListener("click", function (event) {
+    if (!searchMain.contains(event.target)) {
+        searchMain.style.width = "50px"
+    }
+})
+
+searchBar.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        let searchItem = searchBar.value.trim().toLowerCase()
+        console.log(searchItem)
+    }
+})
