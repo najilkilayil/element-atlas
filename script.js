@@ -129,5 +129,24 @@ searchBar.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         let searchItem = searchBar.value.trim().toLowerCase()
         console.log(searchItem)
+
+        let searchPass
+        searchPass = elements.find(element => 
+            element.name.toLowerCase() === searchItem ||
+            element.sym.toLowerCase() === searchItem ||
+            String(element.no) === searchItem
+        )
+
+        if (searchPass) {
+            console.log(`${searchPass.name} - ${searchPass.sym} - ${searchPass.no}`)
+            showDetails(searchPass.sym, searchPass.no, searchPass.name)
+        }
+        else {
+            console.log("Invalid Input")
+            showDetails("Error", "Invalid Input", "Search not found")
+        }
+
+        searchBar.value = ""
+        searchMain.style.width = "50px"
     }
 })
