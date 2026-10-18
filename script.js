@@ -11,7 +11,15 @@ elements.forEach(element => {
     let periodicTable = document.querySelector(".periodic_table")
     periodicTable.appendChild(card)
     card.addEventListener("click", function () {
+        if (element.group === 3 && element.period === 6) {
+            highlight("9")
+        }
+        else if (element.group === 3 && element.period === 7){
+            highlight("10")
+        }
+        else {
         showDetails(element.sym , element.no, element.name)
+        }
     })
 })
 
@@ -61,4 +69,31 @@ function showDetails(sym, no, name) {
             }, 3000);
         }, 600);
     }, 500);
+}
+
+function highlight(Row) {
+    let delayAdd = 0
+    let delayRemove = 0
+
+    document.querySelectorAll(".card_element").forEach(card => {
+        if (card.style.gridRow === Row) {
+            setTimeout(() => {
+                card.style.border = "1px solid cyan" 
+            }, delayAdd);
+
+            delayAdd = delayAdd + 100
+        }
+    })
+
+    setTimeout(() => {
+        document.querySelectorAll(".card_element").forEach(card => {
+            if (card.style.gridRow === Row) {
+                setTimeout(() => {
+                    card.style.border = "1px solid #26394f"
+                }, delayRemove);
+
+                delayRemove = delayRemove + 100
+            }
+        })
+    }, delayAdd);
 }
