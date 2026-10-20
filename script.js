@@ -19,7 +19,7 @@ elements.forEach(element => {
             highlight("10")
         }
         else {
-            showDetails(element.sym, element.no, element.name, element.group, element.period)
+            showDetails(element.sym, element.no, element.name, element.group, element.period, element.cat)
         }
     })
 })
@@ -28,7 +28,7 @@ let detailsBox = document.getElementById("details")
 let elementSymBox = document.getElementById("element_sym")
 let elementInfoBox = document.getElementById("element_info")
 
-function showDetails(sym, no, name, group, period) {
+function showDetails(sym, no, name, group, period, cat) {
     detailsBox.style.display = "flex"
     detailsBox.id = "details"
     detailsBox.style.opacity = "1"
@@ -52,6 +52,7 @@ function showDetails(sym, no, name, group, period) {
                 </div>
             `
             elementSymBox.innerHTML = sym
+            elementSymBox.id = cat
 
             elementSymBox.style.display = "flex"
             elementInfoBox.style.display = "block"
@@ -84,7 +85,7 @@ function highlight(Row) {
     cards.forEach(card => {
         if (card.style.gridRow === Row) {
             setTimeout(() => {
-                card.id = "highlight"
+                card.style.outline = "1px solid #67E8F9"
             }, delayAdd);
 
             delayAdd = delayAdd + 100
@@ -95,7 +96,7 @@ function highlight(Row) {
         cards.forEach(card => {
             if (card.style.gridRow === Row) {
                 setTimeout(() => {
-                    card.id = ""
+                    card.style.outline = ""
                 }, delayRemove);
 
                 delayRemove = delayRemove + 100
@@ -156,10 +157,10 @@ searchBar.addEventListener("keydown", function (event) {
     }
 })
 
-// highlight("1")
-// highlight("2")
-// highlight("3")
-// highlight("4")
-// highlight("5")
-// highlight("6")
-// highlight("7")
+highlight("1")
+highlight("2")
+highlight("3")
+highlight("4")
+highlight("5")
+highlight("6")
+highlight("7")
