@@ -5,6 +5,7 @@ elements.forEach(element => {
     card.className = "card_element"
     card.style.gridColumn = element.group
     card.style.gridRow = element.period
+    card.id = element.cat
 
     card.innerHTML = `${element.sym}`
 
@@ -154,3 +155,11 @@ searchBar.addEventListener("keydown", function (event) {
         searchMain.style.width = "50px"
     }
 })
+
+// highlight("1")
+// highlight("2")
+// highlight("3")
+// highlight("4")
+// highlight("5")
+// highlight("6")
+// highlight("7")

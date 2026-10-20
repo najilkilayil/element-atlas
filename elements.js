@@ -6,6 +6,7 @@ const elements = [
         group: 1,
         period: 1,
         name: "Hydrogen",
+        cat: "non-metal"
     },
     {
         no: 2,
@@ -13,6 +14,7 @@ const elements = [
         group: 18,
         period: 1,
         name: "Helium",
+        cat: "noble"
     },
 
     // period 2
@@ -22,6 +24,7 @@ const elements = [
         group: 1,
         period: 2,
         name: "Lithium",
+        cat: "alkali",
     },
     {
         no: 4,
@@ -29,6 +32,7 @@ const elements = [
         group: 2,
         period: 2,
         name: "Beryllium",
+        cat: "alkaline"
     },
     {
         no: 5,
@@ -36,6 +40,7 @@ const elements = [
         group: 13,
         period: 2,
         name: "Boron",
+        cat: "metalloids"
     },
     {
         no: 6,
@@ -43,6 +48,7 @@ const elements = [
         group: 14,
         period: 2,
         name: "Carbon",
+        cat: "non-metal"
     },
     {
         no: 7,
@@ -50,6 +56,7 @@ const elements = [
         group: 15,
         period: 2,
         name: "Nitrogen",
+        cat: "non-metal"
     },
     {
         no: 8,
@@ -57,6 +64,7 @@ const elements = [
         group: 16,
         period: 2,
         name: "Oxygen",
+        cat: "non-metal"
     },
     {
         no: 9,
@@ -64,6 +72,7 @@ const elements = [
         group: 17,
         period: 2,
         name: "Fluorine",
+        cat: "halogen"
     },
     {
         no: 10,
@@ -71,6 +80,7 @@ const elements = [
         group: 18,
         period: 2,
         name: "Neon",
+        cat: "noble"
     },
 
     // period 3
@@ -80,6 +90,7 @@ const elements = [
         group: 1,
         period: 3,
         name: "Sodium",
+        cat: "alkali",
     },
     {
         no: 12,
@@ -87,6 +98,7 @@ const elements = [
         group: 2,
         period: 3,
         name: "Magnesium",
+        cat: "alkaline"
     },
     {
         no: 13,
@@ -94,6 +106,7 @@ const elements = [
         group: 13,
         period: 3,
         name: "Aluminium",
+        cat: "post-transition"
     },
     {
         no: 14,
@@ -101,6 +114,7 @@ const elements = [
         group: 14,
         period: 3,
         name: "Silicon",
+        cat: "metalloids"
     },
     {
         no: 15,
@@ -108,6 +122,7 @@ const elements = [
         group: 15,
         period: 3,
         name: "Phosphorus",
+        cat: "non-metal"
     },
     {
         no: 16,
@@ -115,6 +130,7 @@ const elements = [
         group: 16,
         period: 3,
         name: "Sulfur",
+        cat: "non-metal"
     },
     {
         no: 17,
@@ -122,6 +138,7 @@ const elements = [
         group: 17,
         period: 3,
         name: "Chlorine",
+        cat: "halogen"
     },
     {
         no: 18,
@@ -129,6 +146,7 @@ const elements = [
         group: 18,
         period: 3,
         name: "Argon",
+        cat: "noble"
     },
 
     // period 4
@@ -138,6 +156,7 @@ const elements = [
         group: 1,
         period: 4,
         name: "Potassium",
+        cat: "alkali",
     },
     {
         no: 20,
@@ -145,6 +164,7 @@ const elements = [
         group: 2,
         period: 4,
         name: "Calcium",
+        cat: "alkaline"
     },
     {
         no: 21,
@@ -152,6 +172,7 @@ const elements = [
         group: 3,
         period: 4,
         name: "Scandium",
+        cat: "transition"
     },
     {
         no: 22,
@@ -159,6 +180,7 @@ const elements = [
         group: 4,
         period: 4,
         name: "Titanium",
+        cat: "transition"
     },
     {
         no: 23,
@@ -166,6 +188,7 @@ const elements = [
         group: 5,
         period: 4,
         name: "Vanadium",
+        cat: "transition"
     },
     {
         no: 24,
@@ -173,6 +196,7 @@ const elements = [
         group: 6,
         period: 4,
         name: "Chromium",
+        cat: "transition"
     },
     {
         no: 25,
@@ -180,6 +204,7 @@ const elements = [
         group: 7,
         period: 4,
         name: "Manganese",
+        cat: "transition"
     },
     {
         no: 26,
@@ -187,6 +212,7 @@ const elements = [
         group: 8,
         period: 4,
         name: "Iron",
+        cat: "transition"
     },
     {
         no: 27,
@@ -194,6 +220,7 @@ const elements = [
         group: 9,
         period: 4,
         name: "Cobalt",
+        cat: "transition"
     },
     {
         no: 28,
@@ -201,6 +228,7 @@ const elements = [
         group: 10,
         period: 4,
         name: "Nickel",
+        cat: "transition"
     },
     {
         no: 29,
@@ -208,6 +236,7 @@ const elements = [
         group: 11,
         period: 4,
         name: "Copper",
+        cat: "transition"
     },
     {
         no: 30,
@@ -215,6 +244,7 @@ const elements = [
         group: 12,
         period: 4,
         name: "Zinc",
+        cat: "transition"
     },
     {
         no: 31,
@@ -222,6 +252,7 @@ const elements = [
         group: 13,
         period: 4,
         name: "Gallium",
+        cat: "post-transition"
     },
     {
         no: 32,
@@ -229,6 +260,7 @@ const elements = [
         group: 14,
         period: 4,
         name: "Germanium",
+        cat: "metalloids"
     },
     {
         no: 33,
@@ -236,6 +268,7 @@ const elements = [
         group: 15,
         period: 4,
         name: "Arsenic",
+        cat: "metalloids"
     },
     {
         no: 34,
@@ -243,6 +276,7 @@ const elements = [
         group: 16,
         period: 4,
         name: "Selenium",
+        cat: "non-metal"
     },
     {
         no: 35,
@@ -250,6 +284,7 @@ const elements = [
         group: 17,
         period: 4,
         name: "Bromine",
+        cat: "halogen"
     },
     {
         no: 36,
@@ -257,6 +292,7 @@ const elements = [
         group: 18,
         period: 4,
         name: "Krypton",
+        cat: "noble"
     },
 
     // period 5
@@ -266,6 +302,7 @@ const elements = [
         group: 1,
         period: 5,
         name: "Rubidium",
+        cat: "alkali",
     },
     {
         no: 38,
@@ -273,6 +310,7 @@ const elements = [
         group: 2,
         period: 5,
         name: "Strontium",
+        cat: "alkaline"
     },
     {
         no: 39,
@@ -280,6 +318,7 @@ const elements = [
         group: 3,
         period: 5,
         name: "Yttrium",
+        cat: "transition"
     },
     {
         no: 40,
@@ -287,6 +326,7 @@ const elements = [
         group: 4,
         period: 5,
         name: "Zirconium",
+        cat: "transition"
     },
     {
         no: 41,
@@ -294,6 +334,7 @@ const elements = [
         group: 5,
         period: 5,
         name: "Niobium",
+        cat: "transition"
     },
     {
         no: 42,
@@ -301,6 +342,7 @@ const elements = [
         group: 6,
         period: 5,
         name: "Molybdenum",
+        cat: "transition"
     },
     {
         no: 43,
@@ -308,6 +350,7 @@ const elements = [
         group: 7,
         period: 5,
         name: "Technetium",
+        cat: "transition"
     },
     {
         no: 44,
@@ -315,6 +358,7 @@ const elements = [
         group: 8,
         period: 5,
         name: "Ruthenium",
+        cat: "transition"
     },
     {
         no: 45,
@@ -322,6 +366,7 @@ const elements = [
         group: 9,
         period: 5,
         name: "Rhodium",
+        cat: "transition"
     },
     {
         no: 46,
@@ -329,6 +374,7 @@ const elements = [
         group: 10,
         period: 5,
         name: "Palladium",
+        cat: "transition"
     },
     {
         no: 47,
@@ -336,6 +382,7 @@ const elements = [
         group: 11,
         period: 5,
         name: "Silver",
+        cat: "transition"
     },
     {
         no: 48,
@@ -343,6 +390,7 @@ const elements = [
         group: 12,
         period: 5,
         name: "Cadmium",
+        cat: "transition"
     },
     {
         no: 49,
@@ -350,6 +398,7 @@ const elements = [
         group: 13,
         period: 5,
         name: "Indium",
+        cat: "post-transition"
     },
     {
         no: 50,
@@ -357,6 +406,7 @@ const elements = [
         group: 14,
         period: 5,
         name: "Tin",
+        cat: "post-transition"
     },
     {
         no: 51,
@@ -364,6 +414,7 @@ const elements = [
         group: 15,
         period: 5,
         name: "Antimony",
+        cat: "metalloids"
     },
     {
         no: 52,
@@ -371,6 +422,7 @@ const elements = [
         group: 16,
         period: 5,
         name: "Tellurium",
+        cat: "metalloids"
     },
     {
         no: 53,
@@ -378,6 +430,7 @@ const elements = [
         group: 17,
         period: 5,
         name: "Iodine",
+        cat: "halogen"
     },
     {
         no: 54,
@@ -385,6 +438,7 @@ const elements = [
         group: 18,
         period: 5,
         name: "Xenon",
+        cat: "noble"
     },
 
     // period 6
@@ -394,6 +448,7 @@ const elements = [
         group: 1,
         period: 6,
         name: "Caesium",
+        cat: "alkali",
     },
     {
         no: 56,
@@ -401,6 +456,7 @@ const elements = [
         group: 2,
         period: 6,
         name: "Barium",
+        cat: "alkaline"
     },
     {
         // no: 57,
@@ -408,6 +464,7 @@ const elements = [
         group: 3,
         period: 6,
         name: "",
+        cat: "lanthanides"
     },
     {
         no: 72,
@@ -415,6 +472,7 @@ const elements = [
         group: 4,
         period: 6,
         name: "Hafnium",
+        cat: "transition"
     },
     {
         no: 73,
@@ -422,6 +480,7 @@ const elements = [
         group: 5,
         period: 6,
         name: "Tantalum",
+        cat: "transition"
     },
     {
         no: 74,
@@ -429,6 +488,7 @@ const elements = [
         group: 6,
         period: 6,
         name: "Tungsten",
+        cat: "transition"
     },
     {
         no: 75,
@@ -436,6 +496,7 @@ const elements = [
         group: 7,
         period: 6,
         name: "Rhenium",
+        cat: "transition"
     },
     {
         no: 76,
@@ -443,6 +504,7 @@ const elements = [
         group: 8,
         period: 6,
         name: "Osmium",
+        cat: "transition"
     },
     {
         no: 77,
@@ -450,6 +512,7 @@ const elements = [
         group: 9,
         period: 6,
         name: "Iridium",
+        cat: "transition"
     },
     {
         no: 78,
@@ -457,6 +520,7 @@ const elements = [
         group: 10,
         period: 6,
         name: "Platinum",
+        cat: "transition"
     },
     {
         no: 79,
@@ -464,6 +528,7 @@ const elements = [
         group: 11,
         period: 6,
         name: "Gold",
+        cat: "transition"
     },
     {
         no: 80,
@@ -471,6 +536,7 @@ const elements = [
         group: 12,
         period: 6,
         name: "Mercury",
+        cat: "transition"
     },
     {
         no: 81,
@@ -478,6 +544,7 @@ const elements = [
         group: 13,
         period: 6,
         name: "Thallium",
+        cat: "post-transition"
     },
     {
         no: 82,
@@ -485,6 +552,7 @@ const elements = [
         group: 14,
         period: 6,
         name: "Lead",
+        cat: "post-transition"
     },
     {
         no: 83,
@@ -492,6 +560,7 @@ const elements = [
         group: 15,
         period: 6,
         name: "Bismuth",
+        cat: "post-transition"
     },
     {
         no: 84,
@@ -499,6 +568,7 @@ const elements = [
         group: 16,
         period: 6,
         name: "Polonium",
+        cat: "post-transition"
     },
     {
         no: 85,
@@ -506,6 +576,7 @@ const elements = [
         group: 17,
         period: 6,
         name: "Astatine",
+        cat: "halogen"
     },
     {
         no: 86,
@@ -513,6 +584,7 @@ const elements = [
         group: 18,
         period: 6,
         name: "Radon",
+        cat: "noble"
     },
 
     // spl case in period 6
@@ -522,6 +594,7 @@ const elements = [
         group: 3,
         period: 9,
         name: "Lanthanum",
+        cat: "lanthanides"
     },
     {
         no: 58,
@@ -529,6 +602,7 @@ const elements = [
         group: 4,
         period: 9,
         name: "Cerium",
+        cat: "lanthanides"
     },
     {
         no: 59,
@@ -536,6 +610,7 @@ const elements = [
         group: 5,
         period: 9,
         name: "Praseodymium",
+        cat: "lanthanides"
     },
     {
         no: 60,
@@ -543,6 +618,7 @@ const elements = [
         group: 6,
         period: 9,
         name: "Neodymium",
+        cat: "lanthanides"
     },
     {
         no: 61,
@@ -550,6 +626,7 @@ const elements = [
         group: 7,
         period: 9,
         name: "Promethium",
+        cat: "lanthanides"
     },
     {
         no: 62,
@@ -557,6 +634,7 @@ const elements = [
         group: 8,
         period: 9,
         name: "Samarium",
+        cat: "lanthanides"
     },
     {
         no: 63,
@@ -564,6 +642,7 @@ const elements = [
         group: 9,
         period: 9,
         name: "Europium",
+        cat: "lanthanides"
     },
     {
         no: 64,
@@ -571,6 +650,7 @@ const elements = [
         group: 10,
         period: 9,
         name: "Gadolinium",
+        cat: "lanthanides"
     },
     {
         no: 65,
@@ -578,6 +658,7 @@ const elements = [
         group: 11,
         period: 9,
         name: "Terbium",
+        cat: "lanthanides"
     },
     {
         no: 66,
@@ -585,6 +666,7 @@ const elements = [
         group: 12,
         period: 9,
         name: "Dysprosium",
+        cat: "lanthanides"
     },
     {
         no: 67,
@@ -592,6 +674,7 @@ const elements = [
         group: 13,
         period: 9,
         name: "Holmium",
+        cat: "lanthanides"
     },
     {
         no: 68,
@@ -599,6 +682,7 @@ const elements = [
         group: 14,
         period: 9,
         name: "Erbium",
+        cat: "lanthanides"
     },
     {
         no: 69,
@@ -606,6 +690,7 @@ const elements = [
         group: 15,
         period: 9,
         name: "Thulium",
+        cat: "lanthanides"
     },
     {
         no: 70,
@@ -613,6 +698,7 @@ const elements = [
         group: 16,
         period: 9,
         name: "Ytterbium",
+        cat: "lanthanides"
     },
     {
         no: 71,
@@ -620,6 +706,7 @@ const elements = [
         group: 17,
         period: 9,
         name: "Lutetium",
+        cat: "lanthanides"
     },
 
     // period 7
@@ -629,6 +716,7 @@ const elements = [
         group: 1,
         period: 7,
         name: "Francium",
+        cat: "alkali",
     },
     {
         no: 88,
@@ -636,102 +724,119 @@ const elements = [
         group: 2,
         period: 7,
         name: "Radium",
+        cat: "alkaline"
     }, {
 
         sym: "Ac - Lr",
         group: 3,
         period: 7,
         name: "",
+        cat: "actinides"
     }, {
         no: 104,
         sym: "Rf",
         group: 4,
         period: 7,
         name: "Rutherfordium",
+        cat: "transition"
     }, {
         no: 105,
         sym: "Db",
         group: 5,
         period: 7,
         name: "Dubnium",
+        cat: "transition"
     }, {
         no: 106,
         sym: "Sg",
         group: 6,
         period: 7,
         name: "Seaborgium",
+        cat: "transition"
     }, {
         no: 107,
         sym: "Bh",
         group: 7,
         period: 7,
         name: "Bohrium",
+        cat: "transition"
     }, {
         no: 108,
         sym: "Hs",
         group: 8,
         period: 7,
         name: "Hassium",
+        cat: "transition"
     }, {
         no: 109,
         sym: "Mt",
         group: 9,
         period: 7,
         name: "Meitnerium",
+        cat: "transition"
     }, {
         no: 110,
         sym: "Ds",
         group: 10,
         period: 7,
         name: "Darmstadtium",
+        cat: "transition"
     }, {
         no: 111,
         sym: "Rg",
         group: 11,
         period: 7,
         name: "Roentgenium",
+        cat: "transition"
     }, {
         no: 112,
         sym: "Cn",
         group: 12,
         period: 7,
         name: "Copernicium",
+        cat: "transition"
     }, {
         no: 113,
         sym: "Nh",
         group: 13,
         period: 7,
         name: "Nihonium",
+        cat: "post-transition"
     }, {
         no: 114,
         sym: "Fl",
         group: 14,
         period: 7,
         name: "Flerovium",
+        cat: "post-transition"
     }, {
         no: 115,
         sym: "Mc",
         group: 15,
         period: 7,
         name: "Moscovium",
+        cat: "post-transition"
     }, {
         no: 116,
         sym: "Lv",
         group: 16,
         period: 7,
         name: "Livermorium",
+        cat: "post-transition"
     }, {
         no: 117,
         sym: "Ts",
         group: 17,
         period: 7,
         name: "Tennessine",
+        cat: "halogen"
     }, {
         no: 118,
         sym: "Og",
         group: 18,
         period: 7,
         name: "Oganesson",
+        cat: "noble"
     },
 
     // spl case of period 7
@@ -741,6 +846,7 @@ const elements = [
         group: 3,
         period: 10,
         name: "Actinium",
+        cat: "actinides"
     },
     {
         no: 90,
@@ -748,6 +854,7 @@ const elements = [
         group: 4,
         period: 10,
         name: "Thorium",
+        cat: "actinides"
     },
     {
         no: 91,
@@ -755,6 +862,7 @@ const elements = [
         group: 5,
         period: 10,
         name: "Protactinium",
+        cat: "actinides"
     },
     {
         no: 92,
@@ -762,6 +870,7 @@ const elements = [
         group: 6,
         period: 10,
         name: "Uranium",
+        cat: "actinides"
     },
     {
         no: 93,
@@ -769,6 +878,7 @@ const elements = [
         group: 7,
         period: 10,
         name: "Neptunium",
+        cat: "actinides"
     },
     {
         no: 94,
@@ -776,6 +886,7 @@ const elements = [
         group: 8,
         period: 10,
         name: "Plutonium",
+        cat: "actinides"
     },
     {
         no: 95,
@@ -783,6 +894,7 @@ const elements = [
         group: 9,
         period: 10,
         name: "Americium",
+        cat: "actinides"
     },
     {
         no: 96,
@@ -790,6 +902,7 @@ const elements = [
         group: 10,
         period: 10,
         name: "Curium",
+        cat: "actinides"
     },
     {
         no: 97,
@@ -797,6 +910,7 @@ const elements = [
         group: 11,
         period: 10,
         name: "Berkelium",
+        cat: "actinides"
     },
     {
         no: 98,
@@ -804,6 +918,7 @@ const elements = [
         group: 12,
         period: 10,
         name: "Californium",
+        cat: "actinides"
     },
     {
         no: 99,
@@ -811,6 +926,7 @@ const elements = [
         group: 13,
         period: 10,
         name: "Einsteinium",
+        cat: "actinides"
     },
     {
         no: 100,
@@ -818,6 +934,7 @@ const elements = [
         group: 14,
         period: 10,
         name: "Fermium",
+        cat: "actinides"
     },
     {
         no: 101,
@@ -825,6 +942,7 @@ const elements = [
         group: 15,
         period: 10,
         name: "Mendelevium",
+        cat: "actinides"
     },
     {
         no: 102,
@@ -832,6 +950,7 @@ const elements = [
         group: 16,
         period: 10,
         name: "Nobelium",
+        cat: "actinides"
     },
     {
         no: 103,
@@ -839,5 +958,6 @@ const elements = [
         group: 17,
         period: 10,
         name: "Lawrencium",
+        cat: "actinides"
     },
 ]
