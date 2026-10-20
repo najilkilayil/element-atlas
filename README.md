@@ -11,6 +11,8 @@ The elements are aligned using JavaScipt Array concept. Which is very easy and h
 - Hovering animation.
 - Search bar with suitbale animation.
 - Added more information to the card.
+- Colorful periodic table
+- Categorised elements 
 
 ## Future Updated
 - More details of each elements
